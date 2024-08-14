@@ -1,0 +1,532 @@
+body {
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+
+}
+#container > img {
+ width: 100%;
+ 
+}
+
+
+#main > h1 {
+  font-size: 80px;
+  margin-top: 100px;
+}
+#main-font > p {
+  font-size: 30px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+#main-left {
+  display: block;
+  float: left;
+margin-top: -700px;
+}
+.main-left1 > img {
+  width: 70%;
+  animation: fluidrotate 30s ease 0s infinite;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.main-left2 > img {
+  width: 50%;
+  animation: fluidrotate-1 30s ease 0s infinite;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+
+.main-right1 > img {
+  animation: fluidrotate-1 30s ease 0s infinite;
+  width: 50%;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+.main-right2 > img {
+  animation: fluidrotate 30s ease 0s infinite;
+  width: 70%;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+#main-right {
+  display: block;
+  float: right;
+ 
+  margin-top: -700px;
+ 
+}
+#main {
+ 
+  text-align: center;
+ padding-bottom: 100px;
+ 
+}
+.triangle {
+  text-align: center;
+  margin-top: 100px;
+  position: relative;
+  background: #529de9;
+margin-bottom: 300px;
+ margin-left: 40px;
+ margin-right: 40px;
+}
+.spot-font {
+
+  text-align: center;
+position: relative;
+margin-bottom: -50px;
+ 
+}
+.spot-font > p {
+  margin-bottom: -20px;
+  font-size: 30px;
+ 
+ 
+}
+.spot-font > h1 {
+  font-size: 70px;
+  margin: 0;
+}
+
+.triangle::before {
+  padding-top: 40px;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 100px 0 100px;
+  border-color: #529de9 transparent transparent transparent;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  
+}
+.spot{
+  margin-top: 50px;
+ 
+}
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+  width:94%;
+  margin:0 auto;
+
+}
+
+.slider img {
+  width: 40vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+  height:auto;
+}
+
+.slider .slick-slide {
+transform: scale(0.8);/*左右の画像のサイズを80%に*/
+transition: all .5s;/*拡大や透過のアニメーションを0.5秒で行う*/
+opacity: 0.5;/*透過50%*/
+}
+
+.slider .slick-slide.slick-center{
+transform: scale(1);/*中央の画像のサイズだけ等倍に*/
+opacity: 1;/*透過なし*/
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+  position: absolute;/*絶対配置にする*/
+  top: 42%;
+  cursor: pointer;/*マウスカーソルを指マークに*/
+  outline: none;/*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;/*矢印の色*/
+  border-right: 2px solid #666;/*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+button#slick-slide-control00 {
+  display: none;
+}
+button#slick-slide-control01 {
+  display: none;
+}
+button#slick-slide-control02 {
+  display: none;
+}
+button#slick-slide-control03 {
+  display: none;
+}
+button#slick-slide-control04 {
+  display: none;
+}
+li::marker {
+  display: none;
+}
+ul.slick-dots {
+  display: none !important;
+}
+
+h2 {
+  font-size: 50px;
+  margin-left: 30px;
+  margin-top: -150px;
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+.spot-p {
+  margin-left: 35px;
+  font-size: 40px;
+}
+
+.style0 {
+  background-color:blue;
+  border:none;
+  height:3px;
+ }
+
+.motto {
+  text-align: center;
+  margin-top: 30px;
+ margin-bottom: 50px;
+}
+.motto > a {
+  color: white;
+  background-color: crimson;
+  font-size: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+#eria {
+  text-align: center;
+}
+#eria > h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.eria1 {
+  float: right;
+}
+.eria1 > img {
+  width: 100%;
+}
+.eria2 > img {
+  width: 200px;
+  margin-bottom: 200px;
+  
+}
+#eria > p:nth-of-type(4) {
+  margin-bottom: 50px;
+}
+.eria3 {
+  float: left;
+}
+.eria3 > img {
+  width: 100%;
+}
+#eria > p:nth-of-type(8) {
+  margin-bottom: 50px;
+}
+.eria4 > img {
+  width: 200px;
+  margin-bottom: 200px;
+}
+#eria > p:nth-of-type(12) {
+  margin-bottom: 50px;
+}
+#eria > p:nth-of-type(16) {
+  margin-bottom: 50px;
+}
+#akusesu
+ {
+  text-align: center;
+ }
+ #akusesu > h1 {
+  font-size: 40px;
+  margin-bottom: -20px;
+ }
+ #akusesu > P{
+  font-size: 20px;
+  margin-bottom: 20px;
+ }
+ .akusesu1 {
+  display: flex;
+  justify-content: center;
+ }
+ .akusesu2 > p {
+  font-weight: bold;
+  font-size: 20px;
+ }
+ footer {
+  background-color: #529de9;
+  height: 150px;
+ }
+ @media screen and (max-width:992px) {
+  .akusesu1 {
+    display: block;
+    text-align: center;
+   }
+ }
+@keyframes fluidrotate {  
+    
+  0%, 100% {
+      border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+      border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+      border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+      border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+      border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+      border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+      border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+      
+  }
+  @media screen and (max-width:1206px) {
+    .eria4 > img {
+      width: 150px;
+      margin-bottom: 200px;
+    }
+    
+    .eria2 > img {
+      width: 150px;
+      margin-bottom: 200px;
+    }
+    .eria2 > img:nth-of-type(1) {
+      margin-left: 10px;
+    }
+    .eria4 > img:nth-of-type(1) {
+      margin-right: 10px;
+    }
+    .eria1 > img {
+      width: 80%;
+      margin-right: -90px;
+    }
+    .eria3 > img {
+      width: 80%;
+      margin-left: -90px;
+    }   
+   
+  }
+  @media screen and (max-width:600px) {
+    .eria1 > img {
+      width: 100%;
+      margin-right: auto;
+    }
+    .eria3 > img {
+      width: 100%;
+      margin-left: auto;
+    }
+    .eria4 > img {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    
+    .eria2 > img {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    .eria2 > img:nth-of-type(1) {
+      margin-left: auto;
+    }
+    .eria4 > img:nth-of-type(1) {
+      margin-right: auto;
+    }
+  }
+  @keyframes fluidrotate-1 {  
+    
+    0%, 100% {
+        border-radius:  46% 54% 50% 50%/35% 61% 39% 65%;
+    }
+    14% {
+        border-radius:50% 50% 34% 66%/56% 68% 32% 44% ;
+    }
+    28% {
+        border-radius:61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+    56% {
+        border-radius:  54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+    70% {
+        border-radius:40% 60% 54% 46%/49% 60% 40% 51%;
+    }
+    84% {
+        border-radius:63% 37% 54% 46%/55% 48% 52% 45% ;
+    }
+        
+    }
+    @media screen and (max-width:1000px) {
+      .eria4 > img {
+        width: 120px;
+        margin-bottom: 200px;
+      }
+      .eria2 > img {
+        width: 120px;
+        margin-bottom: 200px;
+      }
+      
+    }
+    @media screen and (min-width:912px) {
+      #sp-main{
+        display: none;
+      }
+     
+
+    }
+    
+    
+    
+    @media screen and (max-width:911px) {
+      
+      .motto > a {
+        color: white;
+        background-color: crimson;
+        font-size: 20px;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      
+      
+      h2 {
+        font-size: 60px;
+        margin-left: 30px;
+        
+      }
+      .spot-p {
+        margin-left: 35px;
+        font-size: 25px;
+      }
+     
+      #main-left {
+        display: none;
+      }
+      #main-right{
+        display: none;
+      }
+      .spot{
+        margin-top: 10px;
+      
+      }
+      .spot-top {
+        display: block;
+      }
+      #main {
+       text-align: left;
+       margin-left: 50px;
+      }
+      #main-font > p {
+       font-size: 20px;
+       margin-top: 0;
+       
+      }
+      #main > h1 {
+        font-size: 70px;
+      }
+     #sp-main {
+      float: right;
+      margin-top: -500px;
+     }
+     .main-sp1 > img {
+      animation: fluidrotate 30s ease 0s infinite;
+      width: 40%;
+      margin-bottom: -30px;
+     
+     }
+     .main-sp2 > img {
+      animation: fluidrotate-1 30s ease 0s infinite;
+      width: 100%;
+     }
+     .main-sp3 > img {
+      animation: fluidrotate 30s ease 0s infinite;
+      width: 70%;
+      margin-top: -80px;
+      margin-left: -100px;
+     }
+    }
+    
+    @media screen and (max-width:682px) {
+      
+      
+      .motto > a {
+        color: white;
+        background-color: crimson;
+        font-size: 15px;
+        border-radius: 10px;
+        text-decoration: none;
+      }
+      
+      h2 {
+        font-size: 40px;
+      }
+      .spot-p {
+        margin-left: 30px;
+        font-size: 20px;
+      }
+      .main-sp1 > img {
+       display: none;
+       }
+       .main-sp2 > img {
+       display: none;
+
+       }
+       .main-sp3 > img {
+        display: none;
+       }
+       #main-font {
+        margin-left: 0;
+        background-image: url(/photo/main1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        animation: fluidrotate 30s ease 0s infinite;
+        padding-bottom: 50px;
+        padding-top: 80px;
+        text-align: center;
+       }
+       #main-font > p {
+        color: white;
+        margin: 0;
+        font-size: 20px;
+       }
+       #main > h1 {
+        font-size: 50px;
+        margin-left: 0;
+       }
+       #main {
+        text-align: center;
+        margin: 0;
+       }
+       .spot > img {
+        width: 50%;
+        height: auto;
+       }
+    }
+   
